@@ -1,0 +1,112 @@
+<html>
+<head>
+</head>
+	<meta charset="utf-8">
+	<script defer src="main.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+<body>
+<center><h1 id="tytul">Sklep Internetowy</h1>
+<button type="button" onclick="wyswietl_koszyk()">koszyk</button>
+
+<!-----------------------OKIENKO PRODUKTOWE-------------------------->
+<div class="shadowbox">
+  <div class="form-group">
+  <p>Wybierz swój produkt:</p>
+    <label for="koszulka">
+     <input
+       name="produkt"
+       value="Koszulka"
+       type="radio"
+       id="koszulka"
+       class="input-radio"
+       checked/>Koszulka</label>
+    <label for="spodnie">
+     <input
+       name="produkt"
+       value="Spodnie"
+       type="radio"
+       id="spodnie"
+       class="input-radio"/>Spodnie</label>
+    <label for="skarpetki">
+     <input
+       name="produkt"
+       value="Skarpetki"
+       type="radio"
+       id="skarpetki"
+       class="input-radio"/>Skarpetki</label>
+ </div>
+
+
+ <div class="form-group">
+  <p>Wybierz kolor:</p>
+    <label for="czerwony">
+     <input
+       name="kolor"
+       value="Czerwony"
+       type="radio"
+       id="czerwony"
+       class="input-radio"
+       checked/>Czerwony</label>
+    <label for="niebieski">
+     <input
+       name="kolor"
+       value="Niebieski"
+       type="radio"
+       id="niebieski"
+       class="input-radio"/>Niebieski</label>
+    <label for="zielony">
+     <input
+       name="kolor"
+       value="Zielony"
+       type="radio"
+       id="zielony"
+       class="input-radio"/>Zielony</label>
+ </div>
+
+
+ <div class="form-group">
+  <p>Wybierz rozmiar:</p>
+    <label for="large">
+     <input
+       name="rozmiar"
+       value="Large"
+       type="radio"
+       id="large"
+       class="input-radio"
+       checked/>L</label>
+    <label for="medium">
+     <input
+       name="rozmiar"
+       value="Medium"
+       type="radio"
+       id="medium"
+       class="input-radio"/>M</label>
+    <label for="small">
+     <input
+       name="rozmiar"
+       value="Small"
+       type="radio"
+       id="small"
+       class="input-radio"/>S</label>
+ </div>
+
+
+  <button type="button" onclick="wyszukaj_produkt()">Szukaj</button>
+
+</div>
+
+<div class="shadowbox" id="wyszukany_produkt">
+
+
+</div>
+<!-----------------------KONIEC - OKIENKO PRODUKTOWE-------------------------->
+<!-----------------------Koszyk-------------------------->
+
+<div class="shadowbox" id="koszyk">
+
+</div>
+
+</center>
+
+</body>
+</html>

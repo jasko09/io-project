@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+</head>
+	<meta charset="utf-8">
+	<script defer src="main.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+<body>
+<center><h1 id="tytul">Sklep Internetowy</h1>
+
+<div class="shadowbox" id="zamowienie">
+
+<h3> Wybierz rodzaj płatnosci:</h3>
+<label for="platnosc">
+     <input name="platnosc" id="przelew"  type="radio" class="input-radio" checked/>Przelew
+	 <input name="platnosc" id="blik"  type="radio" class="input-radio"/>Blik
+</label>
+
+<h3> Wybierz rodzaj dostawy:</h3>
+<label for="dostawa">
+     <input name="dostawa" id="kurier" type="radio" class="input-radio" checked/>Kurier DHL
+	 <input name="dostawa" id="paczka" type="radio" class="input-radio"/>Paczkomaty 24h
+</label>
+
+<h3>Uzupełnij dane osobowe:<h3>
+<label for="dane_osobowe">
+Imie:<input name='dane' id='imie' type="text"><br>
+Nazwisko:<input name='dane'id='naz' type="text"><br>
+Adres zamieszkania:<input name='dane' id='adres' type="text"><br>
+e-mail: <input name='dane' id='mail' type="text"><br>
+
+
+<button type="button" onclick="zamow(koszyk)">Kup</button>
+
+
+
+</div>
+
+</center>
+
+</body>
+</html>
